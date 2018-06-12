@@ -6,13 +6,18 @@
     <style>
     a{
       color:red;
-      font-size: 200px;
+      font-size: 20px;
       font-style: italic;
       font-family: cursive;
-      border-width: : 300px;
+      border-width:3px;
+      padding: 5px;
       text-decoration: none;
-      text-align: center;
+      text-align: left;
       border-style: dotted;
+
+    }
+    .left{
+      text-align: left;
     }
     .center {
       text-align: center;
@@ -35,8 +40,11 @@
     <title>Website</title>
   </head>
   <body>
-    <a href="/">Back</a>
+
     <div class="center">
+      <div class="left">
+          <a href="/">Back</a>
+      </div>
       <button onclick="refresh();" class="uk-button uk-button-default">New Page</button>
     </div>
     <div class="center">
