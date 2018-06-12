@@ -2,15 +2,17 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.5/css/uikit.min.css">
     <style>
-    #refresh {
+    .center {
       text-align: center;
-      margin: auto;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 25px;
     }
     #wiki-frame {
-      width: 600px;
-      height: 1000px;
-      margin: auto;
+      width: 800px;
+      height: 500px;
     }
     </style>
     <script>
@@ -20,15 +22,16 @@
       frame.src = "https://en.wikipedia.org/wiki/Special:Random";
     }
     </script>
+    <title>Website</title>
   </head>
   <body>
     <div class="center">
-      <button onclick="refresh();" id="refresh">
-        Refresh
-      </button>
+      <button onclick="refresh();" class="uk-button uk-button-default">New Page</button>
     </div>
-    <iframe id="wiki-frame" src="https://en.wikipedia.org/wiki/Special:Random">
-      <p>Your Browser does not support iframes</p>
-    </iframe>
+    <div class="center">
+      <iframe id="wiki-frame" src="https://en.wikipedia.org/wiki/Special:Random">
+        <p>Your Browser does not support iframes</p>
+      </iframe>
+    </div>
   </body>
 </html>
